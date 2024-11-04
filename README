@@ -1,3 +1,5 @@
+Built off I2C implementation provided. Elevate usage of I2C communciation to RFID scanner
+
 
 # Introduction
 Examples of $I^2C$ communication between two MSP430FR5994 Launchpads.
