@@ -1,0 +1,13 @@
+
+# Introduction
+Examples of $I^2C$ communication between two MSP430FR5994 Launchpads.
+
+Though external pullups are typically used on the SCL and SDA lines, this example uses the interal pullups enabled on both devices to reduce the demo setup.  This works in this case.  It's recommended to use external pullups in the real application typically 10k or 4.7k Ohm.
+
+Based on the $I^2C$ examples from Texas Instruments MSP430Ware in their Resource Explorer
+
+# Examples
+### "Simple Controller" and "Simple Target"
+1. Description: Minimal example that tests the basic communication over an $I^2C$ channel.  Red LED indicates when a device is transmitting or writing.  The green LED indicates the message being received.  In this case the target is sending a repeating pattern of 1, 2, 3 which is displayed by the controller flashing the green LED.
+1. Usage: `make install_simple_controller` and `make install_simple_target` for the respective controller and target device.
+
